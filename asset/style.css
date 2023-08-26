@@ -31,7 +31,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 50px;
 }
 
 .size{
@@ -70,10 +70,6 @@ a{
     transition: all 0.3s ease-in-out;
 }
 
-.img1 {
-    max-width: 100%;
-}
-
                 /* Section 2*/
 
 #number_two{
@@ -90,10 +86,14 @@ h2{
     margin: 2rem 0;
 }
 
+.img1 {
+    max-width: 100%;
+    height: auto;
+}
 
 .project p{
     font-size: 30px;
-    line-height: 36px;
+    line-height: 2.5rem;
 }
 
               /*Section 3*/
@@ -185,18 +185,14 @@ h2{
 
 
                     /*Section 5*/
-.contact{
-    background-color: #296c95;
-    text-align: center;
-    color: white;
-    padding: 70px;
-    max-width: 100%;
-}
-
 .contact h2{
     color: white;
 }
 
+.contact p{
+    font-size: 30px;
+    font-weight: 600;
+}
 
 
 .fa-brands{
@@ -209,7 +205,7 @@ h2{
 }
 
 .code{
-    font-size:x-small;
+    font-size:small;
 }
 
 .fa-x-twitter:hover {
@@ -226,10 +222,7 @@ h2{
 }
 
 footer{
-    position: relative;
-    bottom:0;
-    right: 0;
-    left: 0;
+    max-width: 100%
 }
 
 
@@ -279,6 +272,14 @@ footer{
         margin: 20px auto;
     }
 
+    .project{
+        width: 100%;
+    }
+
+    .img1 {
+        margin-top: 40px;
+    }
+
     #number_three{
         margin: 20px auto;
         padding: 20px 0;
@@ -319,12 +320,50 @@ footer{
     .above, .below{
         display: none;
     }
+
+    .contact{
+        background-color: #296c95;
+        color: white;
+        text-align: center;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+   }
 }
 
                             /*MEDIA QUERIES @MIN-WIDTH OF 1024px*/
+
 @media screen  and (min-width:1024px){
+    .design{
+        margin-right: 50px;
+    }
+    
+    .pregrid, .grid-holder{
+        margin-left: 55px 
+    }
+
+}
+
+
+                            /*MEDIA QUERIES @MIN-WIDTH OF 768px*/
+
+@media screen  and (min-width:768px){
     #number_two{
         column-gap: 70px;
     }
 
+    .project{
+        width:50%
+    }
+    .contact{
+        background-color: #296c95;
+        text-align: center;
+        align-items: center;
+        color: white;
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
 }
