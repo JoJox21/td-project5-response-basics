@@ -74,9 +74,10 @@ a{
 
 #number_two{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 40px;
-    margin: 80px;
+    margin: 0px;
+    max-width: 1680px;
 }
 
 h2{
@@ -96,11 +97,15 @@ h2{
     line-height: 2.5rem;
 }
 
+.photo{
+    max-width: 820px;
+}
+
               /*Section 3*/
 
 #number_three{
     background-color: rgb(245, 244, 244);
-    padding: 100px;
+    padding: 50px;
     width: 100%
 }
 
@@ -149,9 +154,7 @@ h2{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    margin-right: 70px;
+    margin: 80px 70px 50px 0;
 }
 
 .above{
@@ -163,7 +166,7 @@ h2{
     margin-bottom: -5px;
 }
 
-.proj .design2 {
+.proj2 .design2 {
     color: #4b99a8;
     display: inline-block;
     background-color: white;
@@ -174,7 +177,7 @@ h2{
     padding: 15px;
 }
 
-.proj .design3{
+.proj2 .design3{
     color: white;
     display: inline-block;
     background-color: #296c95;
@@ -219,6 +222,17 @@ h2{
 }
 .fa-linkedin-in:hover {
     color: #004b7c;
+}
+
+.contact{
+    background-color: #296c95;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
 }
 
 footer{
@@ -277,7 +291,7 @@ footer{
     }
 
     .img1 {
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
     #number_three{
@@ -287,7 +301,7 @@ footer{
     
     .pregrid{
         display: block;
-        padding: 20px;
+        padding: 10px 0 10px 50px;
         
     }
     .grid-holder{
@@ -306,8 +320,10 @@ footer{
         background-color: #4b99a8;
         overflow: hidden;
     }
+    
     .proj{
         margin-bottom: 20px;
+        margin-left: -20px;
     }
 
     .img_text{
@@ -334,23 +350,55 @@ footer{
 
                             /*MEDIA QUERIES @MIN-WIDTH OF 1024px*/
 
-@media screen  and (min-width:1024px){
+@media screen  and  (min-width:1024px){
     .design{
-        margin-right: 50px;
+        margin-right: 100px;
+    }
+
+    .project {
+        width: 60%;
+        padding: 15px 0 0 60px;
+    }
+
+    .project p{
+        text-align: justify;
     }
     
     .pregrid, .grid-holder{
-        margin-left: 55px 
+        padding-left: 60px 
+    }
+
+    .proj{
+        padding-left: 50px;
+        width: 60%;
+        text-align: justify;
+    }
+
+    .photo{
+        padding: 50px;
+    }
+
+    #number_two{
+        column-gap: 80px;
+        padding: 60px;
+    }
+    .proj2{
+        padding: 10px;
+        margin-right: 50px;
     }
 
 }
 
 
-                            /*MEDIA QUERIES @MIN-WIDTH OF 768px*/
+                            /*MEDIA QUERIES @MAX-WIDTH OF 768px*/
 
-@media screen  and (min-width:768px){
+@media screen  and (min-width:415px) and (max-width:768px){
     #number_two{
         column-gap: 70px;
+    }
+
+    .photo{
+        padding-top: 50px;
     }
 
     .contact{
@@ -363,4 +411,5 @@ footer{
         flex-direction: column;
         max-width: 100%;
     }
+    
 }
